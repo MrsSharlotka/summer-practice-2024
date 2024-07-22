@@ -3,6 +3,7 @@ import pandas as pd
 import json
 from app import is_unique_combination, find_minimal_unique_combination, main
 
+
 class TestAppFunctions(unittest.TestCase):
 
     def setUp(self):
@@ -34,6 +35,7 @@ class TestAppFunctions(unittest.TestCase):
         lines = csv_result.strip().split('\n')
         unique_features = lines[1].strip().split(',')
         self.assertIn("фамилия", unique_features)
+
 
 if __name__ == "__main__":
     unittest.main()
